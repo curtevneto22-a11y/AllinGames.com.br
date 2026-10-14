@@ -10,7 +10,9 @@
     "build": "next build",
     "start": "next start",
     "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write ."
+    "lint:fix": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "next": "^16.3.1",
@@ -18,6 +20,13 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
+    "jest": "^30.5.2",
     "prettier": "^3.9.6"
+  },
+"overrides": {
+  "@istanbuljs/load-nyc-config": {
+    "js-yaml": "4.3.2"
   }
+}
+  
 }
